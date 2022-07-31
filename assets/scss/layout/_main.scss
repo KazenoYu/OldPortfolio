@@ -1,0 +1,100 @@
+.index_main{
+	width: 100vw;
+	max-height: 100vh;
+	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 24px;
+	margin: 16px;
+}
+
+
+.introduce{
+	text-align: left;
+
+
+
+
+
+	>h1,h2{
+		margin:16px 0px;
+	}
+}
+
+
+
+
+
+.main_buttonEnter{
+	display: block;
+	background-color:initial;
+	font-family: 'Poppins', sans-serif;
+	border: 2px solid #00aeff;
+	color: #00aeff;
+	font-size: 18px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	width: 150px;
+	height: 20px;
+	padding: 10px 30px;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+
+
+
+
+	>span{
+		position: relative;
+	  transition: color 1s ease;
+	  z-index: 1;
+	}
+
+
+}
+
+// focus, active 需學習
+.main_buttonEnter:hover span,
+.main_buttonEnter:focus span,
+.main_buttonEnter:active span
+{
+	color:aliceblue;
+}
+
+// before的用法要再學習
+.main_buttonEnter_wave:before{
+	animation: wave 0.5s linear infinite;
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fbtn-wave.png?alt=media&token=267962fb-78ee-4fcb-a559-034579dc675d');
+	background-size: contain;
+	content: '';
+	height: 22px;
+	left: 0;
+	position: absolute;
+	top: -22px;
+	width: 100%;
+}
+
+.main_buttonEnter_wave{
+	background-color: #00aeff;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: calc(100% + 22px);
+	transition: top 1s ease;
+	width: 100%;
+}
+
+.main_buttonEnter:hover .main_buttonEnter_wave,
+.main_buttonEnter:focus .main_buttonEnter_wave,
+.main_buttonEnter:active .main_buttonEnter_wave
+{
+	top: 0;
+}
+
+@keyframes wave {
+	to {
+		background-position-x: 118px;
+	}
+}

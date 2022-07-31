@@ -1,0 +1,488 @@
+@charset "UTF-8";
+/* 將大部分標籤的預設樣式重製成以下的內容 */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 賦予 HTML5 標籤基本的 Display:block ，用於輔助舊的瀏覽器能正常顯示 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* 將 body 也就是整體的文字行高預設成 1 */
+body {
+  line-height: 1;
+}
+
+/* 取消項目列表預設的輔助符號 */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 隱藏引用標籤預設的引號(部分瀏覽器有) */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* 重置引用標籤的偽元素 */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* 將表格初始化 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  /*This part is important for centering*/
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  -webkit-animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+          animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+html {
+  max-width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-box {
+  width: 30rem;
+  height: 30rem;
+  padding: 40px;
+  background: rgba(255, 207, 139, 0.972);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 73, 116, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 73, 116, 0.6);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-box h2 {
+  font-size: 24px;
+  margin: 0 0 30px;
+  padding: 0;
+  color: #00aeff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+  width: 20rem;
+  margin: 16px;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #00aeff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #00aeff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: px;
+  color: #00aeff;
+  pointer-events: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  color: #00aeff;
+  font-size: 16px;
+}
+
+.main_buttonEnter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background: #2980B9;
+  background: -webkit-gradient(linear, left top, right top, from(#b5ecff), color-stop(#6DD5FA), to(#2980B9));
+  background: linear-gradient(to right, #b5ecff, #6DD5FA, #2980B9);
+  max-width: 100vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar_center {
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  width: 90vw;
+  height: 40px;
+  padding: 24px;
+  border-bottom: 1px solid;
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.navbar_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.navbar_list > li {
+  display: inline-block;
+  margin: 16px;
+}
+
+.navbar_list > li > a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.index_main {
+  width: 100vw;
+  max-height: 100vh;
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 24px;
+  margin: 16px;
+}
+
+.introduce {
+  text-align: left;
+}
+
+.introduce > h1, .introduce h2 {
+  margin: 16px 0px;
+}
+
+.main_buttonEnter {
+  display: block;
+  background-color: initial;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #00aeff;
+  color: #00aeff;
+  font-size: 18px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  width: 150px;
+  height: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+}
+
+.main_buttonEnter > span {
+  position: relative;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+  z-index: 1;
+}
+
+.main_buttonEnter:hover span,
+.main_buttonEnter:focus span,
+.main_buttonEnter:active span {
+  color: aliceblue;
+}
+
+.main_buttonEnter_wave:before {
+  -webkit-animation: wave 0.5s linear infinite;
+          animation: wave 0.5s linear infinite;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fire-fotos-8e3f9.appspot.com/o/img%2Fbtn-wave.png?alt=media&token=267962fb-78ee-4fcb-a559-034579dc675d");
+  background-size: contain;
+  content: '';
+  height: 22px;
+  left: 0;
+  position: absolute;
+  top: -22px;
+  width: 100%;
+}
+
+.main_buttonEnter_wave {
+  background-color: #00aeff;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: calc(100% + 22px);
+  -webkit-transition: top 1s ease;
+  transition: top 1s ease;
+  width: 100%;
+}
+
+.main_buttonEnter:hover .main_buttonEnter_wave,
+.main_buttonEnter:focus .main_buttonEnter_wave,
+.main_buttonEnter:active .main_buttonEnter_wave {
+  top: 0;
+}
+
+@-webkit-keyframes wave {
+  to {
+    background-position-x: 118px;
+  }
+}
+
+@keyframes wave {
+  to {
+    background-position-x: 118px;
+  }
+}
+
+.footer {
+  width: 100vw;
+  height: 3rem;
+  padding: 16px;
+  bottom: 0;
+  background-color: #0072be;
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer > a {
+  margin: 16px;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.footer > ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Note {
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */

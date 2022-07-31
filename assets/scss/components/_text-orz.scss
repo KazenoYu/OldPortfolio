@@ -1,0 +1,28 @@
+// 兩側文字效果
+.text{
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.text-left{
+	width: 5%;
+	height: 100vh;
+	background-color: rgb(255, 255, 255);
+	// 英文直書
+	writing-mode: vertical-lr;
+	font-size: 16px;
+}
+.text-mid{
+	width: 90%;
+}
+.text-right{
+	width: 5%;
+	height: 100vh;
+	background-color: rgb(255, 255, 255);
+	writing-mode: vertical-lr;
+	text-align: center;
+	font-size: 16px;
+}

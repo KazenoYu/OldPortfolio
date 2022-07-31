@@ -1,0 +1,26 @@
+.footer{
+	width: 100vw;
+	height: 3rem;
+	padding: 16px;
+	bottom: 0;
+	background-color: #0072be;
+	color: aliceblue;
+	font-family: 'Roboto', sans-serif;
+	position: fixed;
+	display: flex;
+
+
+
+
+	>a{
+		margin: 16px;
+		color: aliceblue;
+		text-decoration:none;
+		font-size: 1.4rem;
+	}
+
+
+	>ul{
+		justify-content:space-between;
+	}
+}
