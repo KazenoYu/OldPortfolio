@@ -1,0 +1,43 @@
+.index_create{
+	max-width: 100vw;
+	height: 100vh;
+	color: aliceblue;
+
+	>h1{
+	text-align: center;
+	border-bottom:1px solid aliceblue  ;
+	padding-bottom:1rem;
+}
+ >img{
+	text-align: center;
+	width: 40rem;
+
+ }
+}
+
+@media screen and (max-width:1080px){
+
+	img{width:30rem;}
+
+}
+
+@media screen and (max-width:512px){
+
+	img{width:25rem;}
+
+}
+
+.poem{
+	display: flex;
+	justify-content: center;
+}
+
+.next_prev{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	>span{
+		font-size: 1.5rem;
+		margin: 1rem;
+	}
+}

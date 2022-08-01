@@ -17,7 +17,6 @@
 
 	>h1,h2{
 		margin:1.5rem 0;
-
 	}
 
 	>p{
@@ -50,10 +49,22 @@
 	}
 }
 
-.skill{
-	margin:1rem 0 2rem 0;
-}
+.skill_Fortend{
+	width: 20rem;
+	margin:1rem 0 0rem 0;
+	background-color: #024a6b;
 
+	>span{
+		background-color: #00aeff;
+	}
+	>span a:hover{
+		background-color: aquamarine;
+	}
+
+}
+.skill_Design{
+	margin:0rem 0 2rem 0;
+}
 
 
 
