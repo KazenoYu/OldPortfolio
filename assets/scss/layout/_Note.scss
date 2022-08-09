@@ -1,5 +1,15 @@
 .Note{
-	font-size: 24px;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: aliceblue;
+	margin: 1.5rem;
+	>article>ol>li{
+		margin: 1rem;
+	}
+
 }
 
 .note_main{
