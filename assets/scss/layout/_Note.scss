@@ -1,3 +1,37 @@
 .Note{
 	font-size: 24px;
 }
+
+.note_main{
+	max-width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.note_title{
+	height: 5rem;
+	font-size: 3rem;
+	margin-top: 8rem;
+	>a{
+		text-decoration: none;
+		color:aliceblue;
+		border-bottom: 1px solid aliceblue;
+		padding: 0.5rem;
+	}
+}
+
+.note_article{
+	height: 10rem;
+	color: aliceblue;
+	font-size: 1.5rem;
+	>ul>li{
+		margin: 1rem;
+	}
+	>p{
+		margin:1rem;
+	}
+}

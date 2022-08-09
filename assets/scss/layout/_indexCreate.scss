@@ -1,12 +1,14 @@
 .index_create{
 	max-width: 100vw;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	color: aliceblue;
 
 	>h1{
 	text-align: center;
-	border-bottom:1px solid aliceblue  ;
-	padding-bottom:1rem;
+
 }
  >img{
 	text-align: center;
@@ -33,9 +35,12 @@
 }
 
 .next_prev{
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+	border-top: 1px solid aliceblue;
+	margin-top: 1rem;
 	>span{
 		font-size: 1.5rem;
 		margin: 1rem;

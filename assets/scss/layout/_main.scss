@@ -11,8 +11,9 @@
 }
 
 
+
 .introduce{
-	text-align: left;
+	text-align:left;
 
 
 	>h1,h2{
@@ -25,6 +26,21 @@
 	}
 }
 
+
+@media(max-width:835px) {
+	.introduce{
+	text-align:center;
+
+	>p{
+		font-size: 1rem;
+		line-height: 1.8rem;
+	}
+	>span{
+		font-size: 1rem;
+	}
+}
+}
+
 .eating{
 	padding-bottom:0.4rem;
 	border-bottom: 1px solid aliceblue;
@@ -34,6 +50,12 @@
 	display: flex;
 	justify-content: space-between;
 
+}
+
+@media(max-width:835px) {
+	.icon_eating{
+		justify-content: center;
+	}
 }
 
 .icon{
