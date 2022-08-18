@@ -7,8 +7,12 @@
 	color: aliceblue;
 	margin: 1.5rem;
 	margin-top: 8rem;
+	text-align: left;
 	>article>ol>li{
 		margin: 1rem;
+	}
+	>ul>li{
+		margin: 1.5rem;
 	}
 
 }

@@ -697,10 +697,15 @@ h2 {
   color: aliceblue;
   margin: 1.5rem;
   margin-top: 8rem;
+  text-align: left;
 }
 
 .Note > article > ol > li {
   margin: 1rem;
+}
+
+.Note > ul > li {
+  margin: 1.5rem;
 }
 
 .note_main {

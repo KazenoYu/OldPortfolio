@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note_js_008Day</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="Note">
+      <h2>js簡介</h2>
+      <p>JavaScript 是 「弱型別」的語言</p>
+      <ul>
+        <li>1. 宣告時無須指定 型別</li>
+        <li>2. 型別 資訊在於 「值」或「物件」本身</li>
+      </ul>
+      <p>沒宣告變數就使用，就會出現ReferenceError的錯誤</p>
+      <h1>所有沒有透過var宣告的變數，都會變成 "全域變數"</h1>
+      <ul>
+        被var宣告的變數，依然可以再次宣告
+        <li>var m=1;</li>
+        <li>var m=2;</li>
+        <li>var m=3;</li>
+      </ul>
+      <ul>
+        let 就不會有這個問題，會提醒"變數已被宣告過"
+      </ul>
+    </div>
+  </body>
+</html>
