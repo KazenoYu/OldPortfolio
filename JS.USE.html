@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="note_js">
+      <p>物件導向(oop)、函式導向(fp)</p>
+      <!-- (?)需要仔細論證 -->
+      <h2>變數 var let const</h2>
+      <a href="https://www.youtube.com/watch?v=FGdKdn_CnWo">六角學院影片</a>
+			<a href="https://medium.com/coding-girl-life/js-var-let-const-ef9895b4773b">整理</a>
+      <p>var 為全域變數，期間能變更內容(?) >> 宣告一個隨時可以變動的變數</p>
+      <p>
+        ※補充：function 內的 var，要在該function內才作用；函式外則為全域(global)
+      </p>
+      <p>let { 區塊作用域(block scope) } {}內才作用 </p>
+			<p>const 具備 let 的特性。在宣告時就需要給值，不然會報錯。(只可讀取，不可變動)</p>
+    </div>
+
+		<button onClick="btnFunction"> button onClick 功能範例</button>
+		<div id="btnDiv" style="display=block" class="btn">click button's Div</div>
+    <script>
+      // document.write('')在網頁之中撰寫文字
+      document.write('jsNote');
+      alert('Learn How to');
+
+      var name = 'Eating';
+      name = 'your name';
+      console.log(name);
+
+			function btnFunction(){
+				document.getElementById('btnDiv');
+				console.log(btnDiv.)
+			}
+			
+    </script>
+  </body>
+</html>
